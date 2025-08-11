@@ -45,7 +45,7 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="bg-bg-secondary border border-border rounded-lg overflow-hidden transition-all shadow hover:shadow-lg hover:-translate-y-1 duration-300">
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" loading="lazy" />
+              <img src={project.image} alt={project.title} className="w-full h-48 object-cover object-top" loading="lazy" />
               <div className="p-5 flex flex-col">
                 <h3 className="text-xl font-semibold text-text mb-2">{project.title}</h3>
                 <p className="text-text-muted flex-grow">{project.description}</p>
