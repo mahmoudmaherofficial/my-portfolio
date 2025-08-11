@@ -28,6 +28,7 @@ export default function About() {
               src={t("about_img")}
               alt="About Me"
               className="object-cover h-48 sm:h-56 md:h-72"
+              loading="lazy"
             />
           </motion.div>
 

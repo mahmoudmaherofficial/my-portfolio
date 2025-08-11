@@ -34,6 +34,7 @@ const Hero = () => {
             <img
               src="/me.png"
               alt="Mahmoud"
+              loading="lazy"
               className="relative z-10 w-full max-w-[400px] rounded-xl bg-bg transition-transform duration-300 hover:scale-103"
             />
           </div>
