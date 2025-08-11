@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+@utility container {
+  margin: 0 auto !important;
+  padding: 0 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Brand Colors */
+  --color-primary: #4f46e5;
+  --color-accent: #14b8a6;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  /* Backgrounds */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-bg-transparent: #ffffff50;
+
+  /* Text */
+  --color-text: #111827;
+  --color-text-muted: #6b7280;
+
+  /* Borders / Dividers */
+  --color-border: #e5e7eb;
+
+  /* Buttons */
+  --color-btn-text: #ffffff;
+}
+
+:root[data-theme='dark'] {
+  /* Brand Colors - Keep same for consistency */
+  --color-primary: #4f46e5;
+  --color-accent: #14b8a6;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  /* Backgrounds */
+  --color-bg: #0f172a;
+  --color-bg-secondary: #1e293b;
+  --color-bg-transparent: #0f172a50;
+
+  /* Text */
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+
+  /* Borders / Dividers */
+  --color-border: #334155;
+
+  /* Buttons */
+  --color-btn-text: #ffffff;
+}
+
+@theme {
+  /* Brand Colors */
+  --color-primary: var(--color-primary);
+  --color-accent: var(--color-accent);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-error: var(--color-error);
+
+  /* Backgrounds */
+  --color-bg: var(--color-bg);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-bg-transparent: var(--color-bg-transparent);
+
+  /* Text */
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+
+  /* Borders / Dividers */
+  --color-border: var(--color-border);
+
+  /* Buttons */
+  --color-btn-text: var(--color-btn-text);
+}
+
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--color-bg);
+}
+
+.background {
+  background-color: transparent;
+  opacity: 0.1;
+  background: radial-gradient(circle, transparent 20%, var(--color-bg) 20%, var(--color-bg) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--color-bg) 20%, var(--color-bg) 80%, transparent 80%, transparent) 25px 25px, linear-gradient(var(--color-primary) 2px, transparent 2px) 0 -1px, linear-gradient(90deg, var(--color-primary) 2px, var(--color-bg) 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+  position: absolute;
+  inset: 0;
+}
