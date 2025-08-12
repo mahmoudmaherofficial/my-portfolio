@@ -54,11 +54,12 @@ export default function Footer() {
 
         {/* Social Icons */}
         <motion.div variants={itemVariants} className="flex gap-4 text-xl text-text-muted">
-          <a href="mailto:mahmoudmaherofficial@gmail.com" className="hover:text-primary transition">
+          <a title="Email" href="mailto:mahmoudmaherofficial@gmail.com" className="hover:text-primary transition">
             <FaEnvelope />
           </a>
           <a
             href="https://www.linkedin.com/in/mahmoudmaherofficial2/"
+            title="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition">
@@ -66,6 +67,7 @@ export default function Footer() {
           </a>
           <a
             href="https://github.com/mahmoudmaherofficial"
+            title="GitHub"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition">
