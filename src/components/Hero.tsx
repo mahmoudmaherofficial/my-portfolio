@@ -32,7 +32,7 @@ const Hero = () => {
               )} bg-gradient-to-br from-indigo-600 to-teal-500 rounded-2xl z-0`}
             />
             <img
-              src="/me.png"
+              src="/me.webp"
               alt="Mahmoud"
               loading="lazy"
               className="relative z-10 w-full max-w-[400px] rounded-xl bg-bg transition-transform duration-300 hover:scale-103"

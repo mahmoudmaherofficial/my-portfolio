@@ -11,14 +11,14 @@ const Projects = () => {
     {
       title: "LuxeLane Store",
       description: t("project_1"),
-      image: "/luxelane-thumbnail.png",
+      image: "/luxelane-thumbnail.webp",
       live: "https://code404.site",
       github: "https://github.com/mahmoudmaherofficial/luxelane-frontend",
     },
     {
       title: "Cell Store",
       description: t("project_2"),
-      image: "/cellstore-thumbnail.png",
+      image: "/cellstore-thumbnail.webp",
       live: "https://cell-store.netlify.app/",
       github: "https://github.com/mahmoudmaherofficial/new-cell-store",
     },
