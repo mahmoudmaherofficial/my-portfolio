@@ -5,10 +5,14 @@
   box-sizing: border-box;
 }
 
-@utility container {
-  margin: 0 auto !important;
-  padding: 0 1rem;
+@layer utilities {
+  .container {
+    margin: 0 auto !important;
+    padding: 0 2rem;
+  }
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -99,4 +103,20 @@ body {
   background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
   position: absolute;
   inset: 0;
+}
+
+@media (max-width: 640px) {
+
+  /* sm breakpoint in Tailwind */
+  .container {
+    padding: 0 1rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+
+  /* md breakpoint */
+  .container {
+    padding: 0 3rem !important;
+  }
 }

@@ -38,7 +38,7 @@ export default function Skills() {
   return (
     <>
       <section id="skills" className="py-16 bg-bg-secondary">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
